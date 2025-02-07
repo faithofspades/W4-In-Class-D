@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to While Loops</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+            display: block;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+<h1>Introduction to While Loops</h1>
+<p>A <strong>while loop</strong> allows you to repeatedly execute a block of code as long as a specified condition is <code>true</code>. This is useful for running a loop when the number of iterations is not known beforehand.</p>
+
+<h2>Basic While Loop</h2>
+<p>The syntax of a while loop is:</p>
+<pre><code>while (condition) {
+    // Code to be executed
+}</code></pre>
+<p>Example:</p>
+<pre><code>let count = 0;
+while (count < 5) {
+    console.log("Count is: " + count);
+    count = count + 1; // Increment count to avoid an infinite loop through variable reassignment
+}</code></pre>
+
+<h2>The ++ (plus-plus) operator</h2>
+<p>Incrementing a variable up by 1 is such a common occurrence in computer programming (<em>think C++</em>) that there is a special operator to do just that:</p>
+<pre><code>let count = 0;
+while (count < 5) {
+    console.log("Count is: " + count);
+    count++; // this is the same as count = count + 1.
+}</code></pre>
+<p>In other words, the ++ takes a variable, adds 1 to it, and then reassigns that new value to the original variable</p>
+
+<h2>Iterating with a While Loop</h2>
+<p>We can use a while loop to iterate through an array:</p>
+<pre><code>let fruits = ["Apple", "Banana", "Cherry"];
+let i = 0;
+while (i < fruits.length) {
+    console.log(fruits[i]);
+    i++;
+}</code></pre>
+
+<h2>Breaking Out of a While Loop</h2>
+<p>Use the <code>break</code> statement to exit a while loop prematurely:</p>
+<pre><code>let number = 0;
+while (true) {
+    console.log("Number is: " + number);
+    if (number >= 3) {
+        break;
+    }
+    number++;
+}</code></pre>
+
+<h2>Conclusion</h2>
+<p>While loops are a powerful way to repeat actions until a certain condition is met. They are particularly useful for scenarios where the number of iterations is unknown in advance.</p>
+</body>
+</html>
